@@ -49,7 +49,7 @@ builder.Services.AddCors(options => options.AddPolicy("allowWebApp", builder => 
                                                                                        .AllowAnyMethod()));
 
 FirebaseApp.Create(new AppOptions {
-    Credential = GoogleCredential.FromFile(@"C:\Users\User\Desktop\capacitaciones\Facturacion\firebase\facturacion-a4770-firebase-adminsdk-hq2h7-ddb5dfdcd0.json")
+    Credential = GoogleCredential.FromFile(@"C:\Users\User\Desktop\Proyectos\Facturacion\Facturacion\firebase\facturacion-a4770-firebase-adminsdk-hq2h7-ddb5dfdcd0.json")
 });
 
 builder.Services.AddTransient<ITokenService, TokenService>();

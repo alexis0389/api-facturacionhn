@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\capacitaciones\\Facturacion\\Facturacion.csproj": {}
+    "C:\\Users\\User\\Desktop\\Proyectos\\Facturacion\\Facturacion\\Facturacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\capacitaciones\\Facturacion\\Facturacion.csproj": {
+    "C:\\Users\\User\\Desktop\\Proyectos\\Facturacion\\Facturacion\\Facturacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\capacitaciones\\Facturacion\\Facturacion.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Proyectos\\Facturacion\\Facturacion\\Facturacion.csproj",
         "projectName": "Facturacion",
-        "projectPath": "C:\\Users\\User\\Desktop\\capacitaciones\\Facturacion\\Facturacion.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Proyectos\\Facturacion\\Facturacion\\Facturacion.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\capacitaciones\\Facturacion\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Proyectos\\Facturacion\\Facturacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

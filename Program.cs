@@ -12,7 +12,7 @@ using Microsoft.OpenApi.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddRazorPages();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -49,7 +49,8 @@ builder.Services.AddCors(options => options.AddPolicy("allowWebApp", builder => 
                                                                                        .AllowAnyMethod()));
 
 FirebaseApp.Create(new AppOptions {
-    Credential = GoogleCredential.FromFile(@"C:\Users\User\Desktop\Proyectos\Facturacion\Facturacion\firebase\facturacion-a4770-firebase-adminsdk-hq2h7-ddb5dfdcd0.json")
+    // Credential = GoogleCredential.FromFile(@"C:\Users\User\Desktop\Proyectos\Facturacion\Facturacion\firebase\facturacion-a4770-firebase-adminsdk-hq2h7-ddb5dfdcd0.json")
+    Credential = GoogleCredential.FromFile(@"/app/facturacion-a4770-firebase-adminsdk-hq2h7-ddb5dfdcd0.json")
 });
 
 builder.Services.AddTransient<ITokenService, TokenService>();
@@ -93,13 +94,15 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseExceptionHandler("/Error");
+    app.UseHsts();
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 app.UseCors("allowWebApp");
 
 app.UseHttpsRedirection();
-
+app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();

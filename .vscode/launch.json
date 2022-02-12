@@ -18,7 +18,8 @@
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "Credential_ENVIROMENT": "/app/facturacion-a4770-firebase-adminsdk-hq2h7-ddb5dfdcd0.json",
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
